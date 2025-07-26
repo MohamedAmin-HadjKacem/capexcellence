@@ -1,6 +1,6 @@
 import React from 'react'
 import './Pub.css'
-import pubImage from '../../assets/images/Rectangle36.png'
+import pubImage from '../../assets/images/tutoring.png'
 
 const Pub = () => {
   return (

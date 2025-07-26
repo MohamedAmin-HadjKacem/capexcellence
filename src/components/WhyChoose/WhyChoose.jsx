@@ -1,6 +1,7 @@
 import React from 'react'
 import './WhyChoose.css'
-import whyChooseImage from '../../assets/images/Rectangle4.png'
+import whyChooseImage1 from '../../assets/images/Rectangle18.png'
+import whyChooseImage2 from '../../assets/images/Rectangle19.png'
 
 const WhyChoose = () => {
   return (
@@ -27,8 +28,17 @@ const WhyChoose = () => {
         <button className="why-choose__cta">Voir tous les cours</button>
       </div>
       
-      <div className="why-choose__image">
-        <img src={whyChooseImage} alt="Étudiants qui étudient ensemble" />
+      <div className="why-choose__images">
+        <img 
+          src={whyChooseImage1} 
+          alt="Étudiant souriant avec un casque" 
+          className="why-choose__image why-choose__image--front"
+        />
+        <img 
+          src={whyChooseImage2} 
+          alt="Étudiante étudiant avec un casque" 
+          className="why-choose__image why-choose__image--back"
+        />
       </div>
     </div>
   )

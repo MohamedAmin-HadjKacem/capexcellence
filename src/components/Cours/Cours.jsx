@@ -1,13 +1,13 @@
 import React from 'react'
 import './Cours.css'
-import mathImage from '../../assets/images/Rectangle11.png'
-import francaisImage from '../../assets/images/Rectangle13.png'
-import anglaisImage from '../../assets/images/Rectangle15.png'
-import sciencesImage from '../../assets/images/Rectangle18.png'
-import communicationImage from '../../assets/images/Rectangle19.png'
-import leadershipImage from '../../assets/images/Rectangle24.png'
-import autonomieImage from '../../assets/images/Rectangle26.png'
-import creativiteImage from '../../assets/images/Rectangle28.png'
+import mathImage from '../../assets/images/Rectangle9.png'
+import francaisImage from '../../assets/images/Rectangle11.png'
+import anglaisImage from '../../assets/images/Rectangle13.png'
+import sciencesImage from '../../assets/images/Rectangle15.png'
+import communicationImage from '../../assets/images/Rectangle60.png'
+import leadershipImage from '../../assets/images/Rectangle61.png'
+import autonomieImage from '../../assets/images/Rectangle62.png'
+import creativiteImage from '../../assets/images/Rectangle63.png'
 
 const Cours = () => {
   const courses = [

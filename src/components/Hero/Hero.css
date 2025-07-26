@@ -1,16 +1,16 @@
 .hero-section {
   position: relative;
-  min-height: 580px;
+  min-height: 100vh;
+  width: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
-  color: #fff;
-  padding: 0;
 }
 
 .hero-bg {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -27,10 +27,11 @@
 
 .hero-overlay {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.2) 100%);
   z-index: 2;
 }
 
@@ -38,51 +39,54 @@
   position: relative;
   z-index: 3;
   width: 100%;
-  max-width: 1320px; /* Ajout d'une largeur max pour le contenu */
-  margin: 0 auto; /* Centrage */
-  padding: 64px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .hero-text {
-  color: #fff;
-  text-align: left;
-  padding: 0 15px; /* Ajout d'un padding pour les petits écrans */
+  max-width: 600px;
+  color: white;
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
-  font-weight: 400;
-  opacity: 0.95;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
 }
 
 .hero-title {
-  font-size: 2.8rem;
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 1.2rem;
-  letter-spacing: -1px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
 }
 
 .hero-desc {
   font-size: 1.1rem;
-  font-weight: 400;
-  opacity: 0.97;
-  margin-bottom: 2rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
 }
 
-.btn.btn-primary.btn-lg {
-  background: #0267C1; /* Mise à jour de la couleur du bouton */
-  border-color: #0267C1;
-  font-size: 1.1rem;
-  font-weight: 600;
-  padding: 12px 28px;
+.hero-cta {
+  display: inline-block;
+  background-color: #0066CC;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-.btn.btn-primary.btn-lg:hover {
-  background: #014c93;
-  border-color: #014c93;
+.hero-cta:hover {
+  background-color: #0055aa;
+  transform: translateY(-2px);
+  color: white;
+  text-decoration: none;
 }
 
 @media (max-width: 992px) {
