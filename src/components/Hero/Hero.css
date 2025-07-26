@@ -1,0 +1,109 @@
+.hero-section {
+  position: relative;
+  min-height: 580px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 0;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 1320px; /* Ajout d'une largeur max pour le contenu */
+  margin: 0 auto; /* Centrage */
+  padding: 64px 0;
+}
+
+.hero-text {
+  color: #fff;
+  text-align: left;
+  padding: 0 15px; /* Ajout d'un padding pour les petits écrans */
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.95;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+  letter-spacing: -1px;
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.97;
+  margin-bottom: 2rem;
+}
+
+.btn.btn-primary.btn-lg {
+  background: #0267C1; /* Mise à jour de la couleur du bouton */
+  border-color: #0267C1;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn.btn-primary.btn-lg:hover {
+  background: #014c93;
+  border-color: #014c93;
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    min-height: 480px;
+  }
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 15px;
+  }
+  .hero-text {
+    padding: 0;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-bg-img {
+    display: none;
+  }
+  .hero-overlay {
+    background: #1976d2; /* Couleur de fond unie sur mobile si pas d'image */
+  }
+}

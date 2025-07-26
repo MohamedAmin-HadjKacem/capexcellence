@@ -1,0 +1,150 @@
+.fondateur {
+    display: flex;
+    gap: 80px;
+    padding: 80px 120px;
+    background: #fff;
+    position: relative;
+}
+
+.fondateur__image-container {
+    flex: 0 0 45%;
+    position: relative;
+}
+
+.fondateur__image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.fondateur__background-shapes {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    z-index: 1;
+}
+
+.fondateur__background-shapes::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #FFA500;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
+
+.fondateur__background-shapes::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #0066CC;
+    border-radius: 50%;
+    bottom: 40px;
+    right: 40px;
+}
+
+.fondateur__content {
+    flex: 0 0 55%;
+    padding-top: 20px;
+}
+
+.fondateur__label {
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.fondateur__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.fondateur__text {
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.fondateur__text p {
+    margin-bottom: 20px;
+}
+
+.fondateur__signature {
+    margin-top: 40px;
+}
+
+.fondateur__name {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.fondateur__role {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .fondateur {
+        padding: 60px 80px;
+        gap: 60px;
+    }
+
+    .fondateur__title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .fondateur {
+        flex-direction: column;
+        padding: 60px 40px;
+    }
+
+    .fondateur__image-container {
+        flex: 0 0 auto;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .fondateur__content {
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .fondateur {
+        padding: 40px 20px;
+    }
+
+    .fondateur__title {
+        font-size: 1.8rem;
+    }
+
+    .fondateur__text {
+        font-size: 1rem;
+    }
+
+    .fondateur__background-shapes::before,
+    .fondateur__background-shapes::after {
+        width: 100px;
+        height: 100px;
+    }
+}

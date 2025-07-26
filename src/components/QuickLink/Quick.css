@@ -1,0 +1,115 @@
+/* Quick.css */
+.navbar-bandeau {
+  background: #fff;
+  height: 80px;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e9eef3;
+  width: 1920px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.btn-bandeau {
+  background: #0066CC;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  width: 160px;
+  height: 44px;
+  border-radius: 6px;
+  padding: 0 24px;
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.btn-bandeau:hover {
+  background: #014c93;
+  border-color: #014c93;
+  color: #fff;
+}
+
+.icon-bandeau-white {
+  height: 28px;
+  width: 28px;
+  object-fit: contain;
+  margin-right: 8px;
+  filter: brightness(0) invert(1);
+}
+
+.bandeau-links {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.bandeau-link {
+  color: #1F1F25;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.bandeau-link:hover {
+  color: #FF6B00;
+}
+
+.icon-bandeau-orange {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+  margin-right: 8px;
+  filter: invert(33%) sepia(87%) saturate(2283%) hue-rotate(345deg) brightness(96%) contrast(89%);
+}
+
+.bandeau-separator {
+  width: 1.5px;
+  height: 28px;
+  background: #e9eef3;
+  margin: 0 10px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .navbar-bandeau {
+    flex-direction: column;
+    padding: 10px 20px;
+    align-items: stretch;
+  }
+  
+  .btn-bandeau {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  
+  .bandeau-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .bandeau-separator {
+    display: none;
+  }
+}
+
+@media (min-width: 993px) {
+  .navbar-bandeau {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 100px;
+  }
+}

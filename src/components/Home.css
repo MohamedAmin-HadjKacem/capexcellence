@@ -1,0 +1,9 @@
+/* Home.css */
+main {
+  padding-top: 128px; /* 48px navbar-top + 80px main-navbar */
+}
+
+/* Retire toutes les marges entre les composants */
+main > * {
+  margin: 0;
+}

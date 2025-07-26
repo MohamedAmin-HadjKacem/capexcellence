@@ -1,0 +1,112 @@
+.offres-container {
+    display: flex;
+    gap: 30px;
+    padding: 60px 120px;
+    background: #fff;
+}
+
+.offre-card {
+    flex: 1;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.offre-card::after {
+    content: '';
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.offre-student {
+    background-color: #0066CC;
+    color: white;
+}
+
+.offre-student::after {
+    background-color: #ff6b00;
+}
+
+.offre-teacher {
+    background-color: #FFA500;
+    color: white;
+}
+
+.offre-teacher::after {
+    background-color: white;
+}
+
+.offre-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.offre-button {
+    background: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+}
+
+.offre-student .offre-button {
+    color: #0066CC;
+}
+
+.offre-student .offre-button:hover {
+    background: #f0f6ff;
+}
+
+.offre-teacher .offre-button {
+    color: #FFA500;
+}
+
+.offre-teacher .offre-button:hover {
+    background: #fff8e6;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .offres-container {
+        padding: 40px 60px;
+    }
+
+    .offre-card h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .offres-container {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .offre-card {
+        padding: 30px;
+    }
+
+    .offre-card h2 {
+        font-size: 1.6rem;
+    }
+}
