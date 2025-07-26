@@ -1,6 +1,6 @@
 import React from 'react'
 import './WhyChoose.css'
-import whyChooseImage from '../../assets/images/Rectangle 4.png'
+import whyChooseImage from '../../assets/images/Rectangle4.png'
 
 const WhyChoose = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '../../assets/images/Rectangle 1.png';
+import heroImg from '../../assets/images/Rectangle1.png';
 import './Hero.css';
 
 function Hero() {

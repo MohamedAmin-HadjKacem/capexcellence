@@ -3,9 +3,9 @@ import './Footer.css'
 import logo from '../../assets/images/logo.png'
 import phone from '../../assets/images/phone-call.png'
 import email from '../../assets/images/envelope.png'
-import facebook from '../../assets/images/facebook_2673658.png'
-import instagram from '../../assets/images/instagram_2673885.png'
-import linkedin from '../../assets/images/linkedin_2673816.png'
+import facebook from '../../assets/images/facebook.png'
+import instagram from '../../assets/images/instagram.png'
+import linkedin from '../../assets/images/linkedin.png'
 
 const Footer = () => {
   return (

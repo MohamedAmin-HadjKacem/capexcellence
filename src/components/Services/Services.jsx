@@ -1,8 +1,8 @@
 import React from 'react'
 import './Service.css'
-import img1 from '../../assets/images/Rectangle 4.png'
-import img2 from '../../assets/images/Rectangle 5.png'
-import img3 from '../../assets/images/Rectangle 6.png'
+import img1 from '../../assets/images/Rectangle4.png'
+import img2 from '../../assets/images/Rectangle5.png'
+import img3 from '../../assets/images/Rectangle6.png'
 
 const Services = () => {
   return (

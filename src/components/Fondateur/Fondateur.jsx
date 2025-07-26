@@ -1,6 +1,6 @@
 import React from 'react'
 import './Fondateur.css'
-import fondateurImage from '../../assets/images/Rectangle 35.png'
+import fondateurImage from '../../assets/images/fondateur.png'
 
 const Fondateur = () => {
   return (

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import coursesIcon from '../../assets/images/Group 27.png'; // Updated icon for "Nos Cours"
+import coursesIcon from '../../assets/images/Group27.png'; // Updated icon for "Nos Cours"
 import teacherIcon from '../../assets/images/chalkboard-user.png';
 import locateIcon from '../../assets/images/region-pin-alt.png';
 import priceIcon from '../../assets/images/Vector.png';
-import whatsappIcon from '../../assets/images/whatsapp_1419661 1.png';
+import whatsappIcon from '../../assets/images/whatsapp.png';
 import './Quick.css';
 
 function Quick() {
